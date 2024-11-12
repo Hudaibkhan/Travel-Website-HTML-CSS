@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo img {
+  max-width: 35%;
+}
+
+.nav-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-menu li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.nav-menu li:last-child {
+  margin-right: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #333;
+  transition: all ease 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #ff7f50;
+}
+
+.hero {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+}
+
+.hero-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+}
+
+.hero-content p {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.hero-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #171083;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 1.6rem;
+  transition: all ease 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #000000;
+}
+
+.destinations {
+  font-size: 2.4rem;
+  margin: 40px 20px;
+  text-align: center;
+}
+
+.destinations h2 {
+  margin-bottom: 40px;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.destination-item img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.destination-item {
+  text-align: left;
+}
+
+.destination-item h3 {
+  font-size: 2rem;
+}
+
+.destination-item p {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.contact {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.contact h3 {
+  font-size: 3rem;
+}
+
+.contact-info p {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.contact-info ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contact-info li {
+  margin: 0 20px;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info li a {
+  text-decoration: none;
+  color: black;
+}
+
+.form {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+input,
+textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  box-shadow: 0 0 20px rgb(47, 0, 255);
+  border-radius: 20px;
+  font-size: 1.4rem;
+  background: transparent;
+  outline: none;
+}
+
+input:hover,
+textarea:hover {
+  box-shadow: 0 0 40px rgb(47, 0, 255);
+}
+
+textarea {
+  height: 200px;
+  resize: none;
+}
+
+.form button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0b0fe0;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 1.6rem;
+  border: none;
+  transition: all ease 0.3s;
+}
+
+.form button:hover {
+  background-color: #05030f;
+}
+
+footer {
+  background-color: #03020a;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-icons img {
+  margin-right: 20px;
+  height: 30px;
+  width: 30px;
+}
+
+footer p {
+  font-size: 1.4rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  .logo img {
+    max-width: 60%;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content p {
+    font-size: 1.4rem;
+  }
+
+  .destination-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact,
+  .form {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  img{
+    width: auto;
+    height: auto;
+  }
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .destinations {
+    font-size: 2rem;
+    margin: 20px;
+  }
+
+  footer p {
+    font-size: 1.2rem;
+  }
+}
